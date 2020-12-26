@@ -1,15 +1,16 @@
 package tangerLab;
 
-import java.util.Date;
 
 public class EmployesRepresentation extends Employes {
 
-		public EmployesRepresentation(String nom, String prenom, int age, Date dateDentrer) {
-			super(nom, prenom, age, dateDentrer);
-			// TODO Auto-generated constructor stub
-		}
+	private double ChifreAffaire = 2000;
 
-		public void calculerSalaire() {
-			
-		}
+	EmployesRepresentation(String nom, String prenom, int Age, String dateDES) {
+		super();
+	}
+
+	@Override
+	public double calculerSalaire() {
+		return ChifreAffaire*0.2+2500;
+	}
 }

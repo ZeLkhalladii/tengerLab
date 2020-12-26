@@ -1,14 +1,14 @@
 package tangerLab;
 
-import java.util.Date;
 
 public class EmployesProduction extends Employes{
-	public EmployesProduction(String nom, String prenom, int age, Date dateDentrer) {
-		super(nom, prenom, age, dateDentrer);
+
+	EmployesProduction(String nom, String prenom, int Age, String dateDES) {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public void calculerSalaire() {
-		
+	public double calculerSalaire() {
+		return 0;
 	}
 }

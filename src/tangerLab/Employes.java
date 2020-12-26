@@ -1,47 +1,38 @@
 package tangerLab;
 
-import java.util.Date;
 
 public abstract class Employes {
 
 	private String nom;
 	private String prenom;
-	private int age;
-	private Date dateDentrer;
-	
-	
-	
-	
-	public Employes(String nom, String prenom, int age, Date dateDentrer) {
+	private int Age;
+	private String dateDES;
+
+	 Employes(String nom, String prenom, int Age, String dateDES) {
 		this.nom = nom;
 		this.prenom = prenom;
-		this.age = age;
-		this.dateDentrer = dateDentrer;
+		this.Age = Age;
+		this.dateDES = dateDES;
+	}
+	
+	 Employes() {
 		
 	}
 
 	public String getNom() {
-	return this.nom;
-}
+		return this.nom;
+	}
 	public String getPrenom() {
 		return this.prenom;
 	}
-	
 	public int getAge() {
-		return this.age;
+		return this.Age;
 	}
-	
-	public Date getDateDentrer() {
-		return this.dateDentrer;
+	public String getDateDES() {
+		return this.dateDES;
 	}
-	
-	public abstract void calculerSalaire();
-	
-	
-	public String afficherLemployer() { 
-		
-		return "L'employé " + getNom() + getPrenom();
-	}
-		
+
+	public abstract double calculerSalaire();	
 }
 
+		
